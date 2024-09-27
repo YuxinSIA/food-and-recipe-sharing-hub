@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes - Food and Recipe Sharing Hub</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header>
+  <h1>Discover Delicious Recipes</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../pages/home.html">Home</a></li>
+    <li><a href="../pages/recipes.html">Recipes</a></li>
+    <li><a href="../pages/submit.html">Submit a Recipe</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- Recipe Filter Form -->
+  <section>
+    <h2>Filter Recipes by Ingredient</h2>
+    <form id="filterForm">
+      <label for="ingredient">Ingredient:</label>
+      <input type="text" id="ingredient" name="ingredient" required pattern="[A-Za-z\s]+">
+      <button type="submit">Filter</button>
+    </form>
+  </section>
+
+  <!-- Recipe Table -->
+  <section>
+    <h2>Recipe List</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Recipe Name</th>
+        <th>Cuisine</th>
+        <th>Main Ingredient</th>
+        <th>Prep Time</th>
+      </tr>
+      </thead>
+      <tbody id="recipeTable">
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Food and Recipe Sharing Hub</p>
+</footer>
+
+<script src="../js/scripts.js"></script>
+</body>
+</html>

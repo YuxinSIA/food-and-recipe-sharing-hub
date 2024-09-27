@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit a Recipe - Food and Recipe Sharing Hub</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header>
+  <h1>Submit Your Favorite Recipe</h1>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="../pages/home.html">Home</a></li>
+    <li><a href="../pages/recipes.html">Recipes</a></li>
+    <li><a href="../pages/submit.html">Submit a Recipe</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- Recipe Submission Form -->
+  <section>
+    <h2>Share Your Favorite Recipe</h2>
+    <form id="recipeForm">
+      <!-- Name Field -->
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter your name using only letters." placeholder="Your name">
+      <br><br>
+
+      <!-- Email Field -->
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required title="Please enter a valid email address." placeholder="Your email">
+      <br><br>
+
+      <!-- Recipe Name Field -->
+      <label for="recipeName">Recipe Name:</label>
+      <input type="text" id="recipeName" name="recipeName" required pattern="[A-Za-z0-9\s]+" title="Recipe name should only contain letters and numbers." placeholder="Recipe name">
+      <br><br>
+
+      <!-- Ingredients Field -->
+      <label for="ingredients">Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" required placeholder="List the ingredients"></textarea>
+      <br><br>
+
+      <!-- Instructions Field -->
+      <label for="instructions">Instructions:</label>
+      <textarea id="instructions" name="instructions" required placeholder="Enter the instructions"></textarea>
+      <br><br>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Recipe</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Food and Recipe Sharing Hub</p>
+</footer>
+
+<!-- External JavaScript -->
+<script src="../js/scripts.js"></script>
+</body>
+</html>
+

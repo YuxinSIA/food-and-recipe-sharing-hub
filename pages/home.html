@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food and Recipe Sharing Hub - Home</title>
+    <!-- Web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        header {
+            background-color: #ffb84d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+    <!-- Inline CSS in body -->
+    <header>
+        <h1>Welcome to the Food and Recipe Sharing Hub</h1>
+        <p>Your go-to place for sharing and discovering amazing recipes!</p>
+    </header>
+
+    <!-- Navigation with Dropdown -->
+    <nav>
+        <ul>
+            <li><a href="../pages/home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="../pages/recipes.html" class="dropbtn">Recipes</a>
+                <div class="dropdown-content">
+                    <a href="#HealthyRecipes">Healthy Recipes</a>
+                    <a href="#QuickMeals">Quick Meals</a>
+                    <a href="#Desserts">Desserts</a>
+                </div>
+            </li>
+            <li><a href="submit.html">Submit a Recipe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="HealthyRecipes">
+            <h2>Healthy Recipes</h2>
+            <p>Delicious and healthy recipe ideas...</p>
+        </section>
+
+        <section id="QuickMeals">
+            <h2>Quick Meals</h2>
+            <p>Quick and easy meals for busy days...</p>
+        </section>
+
+        <section id="Desserts">
+            <h2>Desserts</h2>
+            <p>Indulge in some delightful desserts...</p>
+        </section>
+
+        <!-- Content Section 1 -->
+        <section>
+            <h2>Recipe of the Week: Po Tat (Macau-Style Portuguese Custard Tart)</h2>
+            <img src="../images/po_tart.jpg" alt="Po Tat" width="300">
+            <p>Try our irresistible Po Tat, a Macau-style Portuguese Custard Tart with a crispy, flaky crust and a rich, creamy custard filling!</p>
+        </section>
+
+        <!-- Embedded Video -->
+        <section>
+            <h2>Video: How to Make Cajun Chicken Pasta</h2>
+            <!-- Embed YouTube Video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hblIsx6K4UI"
+                    title="How to Make Cajun Chicken Pasta" style="border: none;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <!-- Embedded GIF -->
+        <section>
+            <h2>Cooking is Fun!</h2>
+            <img src="../images/fun_cooking.gif" alt="Cooking Fun" width="300">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food and Recipe Sharing Hub | Designed by Yuxin Wu</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
